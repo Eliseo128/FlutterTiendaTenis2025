@@ -8,6 +8,7 @@ class ProductView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+double screenWidth = MediaQuery.of(context).size.width;
     return Scaffold(
       body: SafeArea(
         child: Column(
@@ -31,14 +32,21 @@ class ProductView extends StatelessWidget {
                 ],
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.all(20.0),
-              child: Hero(
-                tag: product.id,
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(20.0),
-                  child: Image.network(
-                    product.image,
+            Container(
+              width: screenWidth,
+              height: screenWidth * 0.5,
+              child: Padding(
+              
+                
+                         
+                padding: const EdgeInsets.all(20.0),
+                child: Hero(
+                  tag: product.id,
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(20.0),
+                    child: Image.network(
+                      product.image,
+                    ),
                   ),
                 ),
               ),

@@ -9,6 +9,7 @@ class HomeView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double screenWidth = MediaQuery.of(context).size.width; // Obtener ancho de pantalla
     return Scaffold(
       body: SafeArea(
         child: Column(
@@ -18,7 +19,12 @@ class HomeView extends StatelessWidget {
             Expanded(
               child: ListView(
                 children: [
-                   const MainBanner(),//banner.dart';
+                   //const MainBanner(),//banner.dart';
+                     SizedBox(
+                     width: screenWidth,
+                     height: screenWidth * 0.5, // Ejemplo: altura es la mitad del ancho
+                     child: const MainBanner(),//banner.dart';
+                   ),
                   ListView.builder(
                     shrinkWrap: true,
                     primary: false,
