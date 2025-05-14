@@ -3,6 +3,7 @@ https://youtu.be/zrny7zAmMJc?si=Br1znJNEVB-nSAzR
 A new Flutter project.
 ![alt text](image.png)
 ## Getting Started
+![alt text](image-1.png)
 https://github.com/dartbucket/cartbucket.git
 This project is a starting point for a Flutter application.
 
